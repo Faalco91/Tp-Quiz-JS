@@ -3,8 +3,12 @@ function afficherQuestion(currentQuestion, userAnswers, elements) {
     elements.questionText.textContent = question.question;
   
     elements.progression.textContent = `Question ${currentQuestion + 1} / ${quizData.length}`;
+    const progressionBar = document.getElementById("progression-bar");
+    progressionBar.style.width = `${((currentQuestion + 1) / quizData.length) * 100}%`;
+
   
     elements.choixZone.innerHTML = "";
+
   
     question.options.forEach(option => {
       const label = document.createElement("label");
