@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz The Walking Dead</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="accueil">
+    <h1>Quiz : The Walking Dead</h1>
+    <button id="startBtn">Commencer le quiz !</button>
+  </div>
+
+  <div id="quiz" style="display:none;">
+    <div id="progression"></div>
+    <h2 id="questionText"></h2>
+    <div id="options"></div>
+
+    <div class="navigation">
+      <button id="prevBtn">Précédent</button>
+      <button id="nextBtn">Suivant</button>
+      <button id="submitBtn">Valider</button>
+    </div>
+  </div>
+
+  <div id="resultat" style="display:none;">
+    <h2>Résultat du quiz</h2>
+    <p id="scoreFinal"></p>
+    <div id="resume"></div>
+    <button id="restartBtn">Recommencer</button>
+  </div>
+    <script src="./js/data.js" ></script>
+    <script src="./js/ui.js" ></script>
+    <script src="./js/main.js"></script>  
+</body>
+</html>
